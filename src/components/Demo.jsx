@@ -77,7 +77,7 @@ const Demo = () => {
             className="delete_btn peer-focus: border-red-700 peer-focus:text-red-700"
             onClick={handleDelete}
           >
-            ✄
+            X
           </button>
         </form>
         {/* Browser URL History */}
@@ -103,7 +103,7 @@ const Demo = () => {
         </div>
       </div>
       {/* Display Results */}
-      <div className="my-10 max-w-full flex justify-center items-center">
+      <div className="my-10 max-w-full flex justify-center items-center min-h-[12vh]">
         {isFetching ? (
           <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
         ) : error ? (
@@ -127,6 +127,17 @@ const Demo = () => {
             </div>
           )
         )}
+      </div>
+
+      <div className="flex justify-center items-center my-4">
+        <p className="font-satoshi font-semibold text-lg text-gray-700">
+          Made with ❤️ by{" "}
+          <span className="font-inter orange_gradient">
+            <a href="https://vijayraj.vercel.app" target="__blank">
+              Vijay
+            </a>
+          </span>
+        </p>
       </div>
     </section>
   );
