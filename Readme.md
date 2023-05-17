@@ -1,4 +1,4 @@
-# Sumz 🧾
+# Sumz 📚
 
 <ul>
 <li>Summarize Articles with OpenAI GPT-4.</li>
